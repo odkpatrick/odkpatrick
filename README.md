@@ -1,16 +1,18 @@
-### Hi there 👋
+# Hi there 👋 , **I'm Patrick**
+A web developer
 
-<!--
-**odkpatrick/odkpatrick** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Current position
+Freelancer
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## My skillset
+- HTML5
+- CSS3
+- Javascript
+- React js
+- Redux
+- Sass, CSS modules, Bootstrap4
+- Node js
+- Next
+- Git
+- Material UI
+- 

@@ -15,4 +15,3 @@ Freelancer
 - Next
 - Git
 - Material UI
-- 

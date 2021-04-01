@@ -1,17 +1,13 @@
 # Hi there 👋 , **I'm Patrick**
-A web developer
+A web developer 🧑‍💻
 
-## Current position
-Freelancer
+## Current position 👔💼
+Freelancer & contractor
 
-## My skillset
-- HTML5
-- CSS3
-- Javascript
-- React js
-- Redux
-- Sass, CSS modules, Bootstrap4
+## My skillset 🧰
+- HTML5, CSS3, Javascript
+- React & Redux
 - Node js
-- Next
 - Git
-- Material UI
+- Next, Gatsby
+- Sass, CSS modules, Bootstrap4, Material UI

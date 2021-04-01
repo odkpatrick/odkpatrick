@@ -1,10 +1,10 @@
 # Hi there 👋 , **I'm Patrick**
-A web developer 🧑‍💻
+## A web developer 🧑‍💻
 
-## Current position 👔💼
+### Current position 👔💼
 Freelancer & contractor
 
-## My skillset 🧰
+### My skillset 🧰
 - HTML5, CSS3, Javascript
 - React & Redux
 - Node js

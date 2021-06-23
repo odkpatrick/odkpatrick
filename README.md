@@ -5,7 +5,6 @@
 Freelancer & contractor
 
 ### Skillset 🧰
-- ES6, React
-- React & Redux
+- ES6, React, Redux
 - Node js, Next, Gatsby, Git
 - Sass, CSS modules, Bootstrap4, Material UI

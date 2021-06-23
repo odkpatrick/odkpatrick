@@ -4,10 +4,8 @@
 ### Current position 👔💼
 Freelancer & contractor
 
-### My skillset 🧰
-- HTML5, CSS3, Javascript
+### Skillset 🧰
+- ES6, React
 - React & Redux
-- Node js
-- Git
-- Next, Gatsby
+- Node js, Next, Gatsby, Git
 - Sass, CSS modules, Bootstrap4, Material UI

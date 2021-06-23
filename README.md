@@ -1,5 +1,5 @@
 # Hi there 👋 , **I'm Patrick**
-## A web developer 🧑‍💻
+## A web designer & developer 🧑‍💻
 
 ### Current position 👔💼
 Freelancer & contractor

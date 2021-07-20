@@ -8,4 +8,4 @@
 * Node.js
 * MySQL, MongoDB
 
-### Portfolio [odkpatrick.dev](https://odkpatrick.github.io/)
+### Portfolio [odkpatrick.dev](https://odkpatrick.github.io/odkpatrick)

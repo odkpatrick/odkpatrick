@@ -1,6 +1,13 @@
 import * as React from "react"
 import { useState } from "react";
-import { FaBars, FaRegWindowClose } from "react-icons/fa";
+import { DiJavascript } from "react-icons/di"
+import { 
+  FaHtml5, FaCss3, FaGit,
+  FaReact, FaNodeJs, 
+  FaBars, FaDev, FaGithub, 
+  FaHeart, FaLinkedinIn, FaRegWindowClose, 
+  FaTwitter, FaBootstrap, FaSass, FaNpm
+} from "react-icons/fa";
 import "./index.css"
 import * as Styles from "./index.module.css"
 
@@ -37,7 +44,7 @@ const Layout = ({children}) => {
   )
 }
 
-const Logo = <span className="logo">dkpat</span>
+const Logo = <span className="logo">odk</span>
 
 const NavButton = ({toggle, handleToggle}) => {
   if(toggle) {
@@ -65,13 +72,13 @@ const HeaderBar = ({toggle, handleToggle}) => {
       <nav className={toggle ? "nav-wrapper" : "nav-wrapper show"}>
         <ul className="nav-list">
           <li>
-            <a href="#portfolio">portfolio</a>
+            <a href="#portfolio" onClick={handleToggle}>portfolio</a>
             </li>
           <li>
-            <a href="#about">about me</a>
+            <a href="#about" onClick={handleToggle}>about me</a>
             </li>
           <li>
-            <a href="#contact">contact</a>
+            <a href="#contact" onClick={handleToggle}>contact</a>
             </li>
         </ul>
       </nav>
@@ -81,10 +88,18 @@ const HeaderBar = ({toggle, handleToggle}) => {
 
 const Footer = () => {
   return (
-    <footer className={Styles.myFooter}>
-      <div>
-        <p>with love</p>
-        <p>odkpat official copyright 2023.</p>
+    <footer>
+      <div className="footer-wrapper">
+        <div className="footer-links-wrapper">
+          <FaGithub />
+          <FaLinkedinIn />
+          <FaDev />
+          <FaTwitter />
+        </div>
+        <div className="footer-info">
+          <p>Copyright ©2023 All rights reserved </p>
+          <p>with <FaHeart /> odkpat</p>
+        </div>
       </div>
     </footer>
   )
@@ -97,7 +112,7 @@ const IntroSection = () => {
     <div className="intro-content-wrapper">
       <div className="intro-content">
         <h1 className="greeting">Hi, I'm Patrick,</h1>
-        <p className="title">a creative technologist</p>
+        <p className="title">frontend developer</p>
         <button className="resume-btn">download resume</button>
       </div>
       <div>
@@ -107,39 +122,62 @@ const IntroSection = () => {
   )
 }
 
-const ProjectImg = <div className={Styles.ProjectImg}></div>
+const ProjectCard = ({appTitle, appDesc, liveUrl, codeUrl}) => {
+  return (
+    <div className="project-wrapper">
+      <div className="project-img-wrapper">
+        <div className="project-img"></div>
+      </div>
+      <div className="project-details-wrapper">
+        <h3 className="project-title">{appTitle}</h3>
+        <p className="project-description">{appDesc}</p>
+        <div className="project-links">
+          <a href={liveUrl} className="live-btn">view live</a>
+          <a href={codeUrl} className="code-btn">view code</a>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 const Portfolio = () => {
   return (
-    <div>
-      <div>
-        <h2>recent work</h2>
-        <p>check out some of my most recent work</p>
-        <div className={Styles.projectImgWrapper}>
-          { ProjectImg }
-          { ProjectImg }
-          { ProjectImg }
+    <div className="portfolio-wrapper">
+      <div className="portfolio-content">
+        <h2 className="heading">Recent work</h2>
+        <div className="portfolio-projects">
+          <ProjectCard 
+          appTitle="Todo app"
+          appDesc="A todo app built for the web"
+          liveUrl="#"
+          codeUrl="#"
+          />
         </div>
-        <button>hire me</button>
       </div>
-      <div>
-        <h2>services</h2>
-        <p>how I help businesses grow</p>
-        <div>
-          <div>
-            <h3>Business operations analysis</h3>
-            <p>go on more</p>
-          </div>
-          <div>
-            <h3>web design & development</h3>
-            <p>go on more</p>
-          </div>
-          <div>
-            <h3>mogile design & development</h3>
-            <p>go on more</p>
-          </div>
+      <div className="toolbox-content">
+        <h2 className="heading">toolbox</h2>
+        <div className="toolbox-tools">
+            <h3>Most comfortable:</h3>
+            <p className="tools-wrapper">
+              <FaHtml5/>
+              <FaCss3/>
+              <DiJavascript/>
+              <FaReact/>
+              <FaNpm/>
+              <FaNodeJs/>
+              <FaGit/>
+            </p>
+            <h3>comfortable:</h3>
+            <p className="tools-wrapper">
+              <FaBootstrap/>
+              <FaSass/>
+            </p>
+            <h3>Decent:</h3>
+            <p className="tools-wrapper">
+
+            </p>
         </div>
-        <button>reach me</button>
+        <a href="#" className="hireme-btn">hire me</a>
       </div>
     </div>
   )
@@ -147,9 +185,9 @@ const Portfolio = () => {
 
 const About = () => {
   return (
-    <div>
-      <h2>about me</h2>
-      <div>
+    <div className="about-wrapper">
+      <h2 className="heading">about me</h2>
+      <div className="about-info">
         { ProfileImg }
         <p>
           I'm a software developer and enthusiast based in Kampala, Uganda.
@@ -172,14 +210,17 @@ const About = () => {
 
 const Contact = () => {
   return (
-    <div>
-      <h2>reach me</h2>
-      <p>drop me a line and we'll talk</p>
-      <form className={Styles.myForm}>
+    <div className="contact-wrapper">
+      <h2 className="heading">reach me</h2>
+      <p>Drop me a line and we'll talk</p>
+      <form className="contact-form">
         <input typeof="text" placeholder="name" />
         <input typeof="text" placeholder="email" />
-        <input typeof="text" placeholder="enter message..." />
-        <button>send</button>
+        <input 
+        typeof="text" 
+        placeholder="enter message..." 
+        />
+        <button className="submit">send</button>
       </form>
     </div>
   )

@@ -1,5 +1,3 @@
-![](./assets/readme-header.jpg)
-
 <h1 align="center">Hi 👋, I'm Patrick</h1>
 <h3 align="center">A passionate frontend developer from Uganda</h3>
 

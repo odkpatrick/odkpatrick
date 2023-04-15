@@ -1,57 +1,57 @@
 .navBtn {
-    display: none;
+  display: none;
 }
 
 .myFooter {
-    background-color: lightslategray;
+  background-color: lightslategray;
 }
 
 @media screen and (max-width: 767px) {
-    .navBtn {
-        display: block;
-    }
-    .headerTop {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .navWrapper {
-        display: none;
-    }
-    .navList {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: right;
-    }
-    .introContentWrapper {
-        text-align: center;
-    }
-    .introTitle span {
-        display: block;
-    }
-    .profileImg {
-        width: 175px;
-        height: 175px;
-        background-color: lightslategray;
-        border-radius: 50%;
-        margin: auto;
-    }
-    .projectImgWrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-    }
-    .ProjectImg {
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        background-color: lightslategray;
-        margin: 1rem auto;
-    }
-    .myForm * {
-        display: block;
-    }
+  .navBtn {
+    display: block;
+  }
+  .headerTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navWrapper {
+    display: none;
+  }
+  .navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+  .introContentWrapper {
+    text-align: center;
+  }
+  .introTitle span {
+    display: block;
+  }
+  .profileImg {
+    width: 175px;
+    height: 175px;
+    background-color: lightslategray;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .projectImgWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
+  .ProjectImg {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: lightslategray;
+    margin: 1rem auto;
+  }
+  .myForm * {
+    display: block;
+  }
 }
